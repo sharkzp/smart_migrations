@@ -1,0 +1,16 @@
+h1. Smart_migrations
+ Project create for helping with writing migrations and auto run them after create.
+h2. TO DO:
+* Understand how to wrote generators and make them work on current project
+* Pass params throught generators and catch them
+* Make migration file by params that we catch(check current version in seeds.rb or make it by ourselfs)
+* Run migration
+h2. How it needs to be look like:
+** g smigration create_table_users(:name => {:type => 'string', :null => false, :index => true}, :gender => 'boolean')
+==  CreateUser: migrating ====================================================
+-- create_table(:users)
+   -> 0.1125s
+-- add_index(:users, :name)
+   -> 0.0100s
+==  CreateUser: migrated (0.1227s) ===========================================
+
