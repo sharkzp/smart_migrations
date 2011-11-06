@@ -1,0 +1,8 @@
+Description:
+    Generate migration from hash of params and autorun it.
+
+Example:
+    rails generate smigration CreateUserTable {:name => {:type => 'string', :null => false, :index => true}}
+
+    This will create:
+        It create migration in db/migration with all fields that passed through hash params and run it
